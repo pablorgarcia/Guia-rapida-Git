@@ -185,3 +185,10 @@ No tiene solución en git:
 
 No se puede deshacer, porque se pierde la referencia totalmente, si haces eso sin haber guardado un commit, perderás todos los cambios que hayas hecho.
 
+
+
+
+_Fuente_:
+https://slides.com/elenam-lopez/no-liarla-parda-con-git-x-2#/
+https://github.com/ElenaMLopez/taller_git
+
