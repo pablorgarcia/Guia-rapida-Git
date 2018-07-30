@@ -189,6 +189,7 @@ No se puede deshacer, porque se pierde la referencia totalmente, si haces eso si
 
 
 **Fuente**:
+
 https://slides.com/elenam-lopez/no-liarla-parda-con-git-x-2#/
 
 https://github.com/ElenaMLopez/taller_git
