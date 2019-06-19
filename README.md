@@ -185,12 +185,21 @@ No tiene solución en git:
 
 No se puede deshacer, porque se pierde la referencia totalmente, si haces eso sin haber guardado un commit, perderás todos los cambios que hayas hecho.
 
+### ¿Cómo descartar los cambios 'unstaged'?
+
+Para todos los archivos 'unstaged':
+`git checkout -- .`
+
+Para un archivo en un path especifico:
+`git checkout -- path/to/file/to/revert`
 
 
 
-**Fuente**:
+**Fuentes**:
 
 https://slides.com/elenam-lopez/no-liarla-parda-con-git-x-2#/
 
 https://github.com/ElenaMLopez/taller_git
+
+https://stackoverflow.com/
 
