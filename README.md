@@ -1,8 +1,4 @@
-# git-useful-commands
-Comandos útiles para Git
-
-(Text in spanish)
-------
+# Comandos-utiles-para-git
 
 ## Diferentes estados de tu archivo
 1. Working area: Pues como bien dice, el momento en el que estás trabajado. Escribiendo tus cosas, borrando...
