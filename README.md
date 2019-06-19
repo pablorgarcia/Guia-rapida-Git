@@ -192,19 +192,15 @@ Muchas veces, cuando has estado trabajando una parte del código, los archivos s
 
 `git stash`
 
-si quieres ver una lista con los archivos que tienes 'staseados':
-
-`git stash list`
+`git stash list` si quieres ver una lista con los archivos que tienes 'staseados'
 
 ### ¿Cómo descartar los cambios 'unstaged'?
 
-Para todos los archivos 'unstaged':
-
 `git checkout -- .`
-
-Para un archivo en un path especifico:
+Para todos los archivos 'unstaged'.
 
 `git checkout -- path/to/file/to/revert`
+Para un archivo en un path especifico.
 
 
 
