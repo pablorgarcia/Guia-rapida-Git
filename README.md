@@ -1,10 +1,13 @@
 # git-useful-commands
-Most useful commands for Git
+Comandos útiles para Git
+
+(Text in spanish)
+------
 
 ## Diferentes estados de tu archivo
 1. Working area: Pues como bien dice, el momento en el que estás trabajado. Escribiendo tus cosas, borrando...
 2. Stagin Area: Oye esto ya me mola, creo que lo debería guardar...
-3. Commit: ¡¡¡ Ala guardao !!!!
+3. Commit: ¡ Ala guardao !
 
 ### Meter en Stagin Area
 
@@ -185,12 +188,24 @@ No tiene solución en git:
 
 No se puede deshacer, porque se pierde la referencia totalmente, si haces eso sin haber guardado un commit, perderás todos los cambios que hayas hecho.
 
+### Guardar rápido tus cambios, sin llegar a hacer un 'add'
+
+Muchas veces, cuando has estado trabajando una parte del código, los archivos se pueden desordenar y al querer cambiar de rama  un momento para hacer otra cosa hay un conflicto. Si no quieres hacer un commit de un trabajo porque va por la mitad y quieres volver a ese punto más tarde puedes hacer un:
+
+`git stash`
+
+si quieres ver una lista con los archivos que tienes 'staseados':
+
+`git stash list`
+
 ### ¿Cómo descartar los cambios 'unstaged'?
 
 Para todos los archivos 'unstaged':
+
 `git checkout -- .`
 
 Para un archivo en un path especifico:
+
 `git checkout -- path/to/file/to/revert`
 
 
@@ -202,4 +217,6 @@ https://slides.com/elenam-lopez/no-liarla-parda-con-git-x-2#/
 https://github.com/ElenaMLopez/taller_git
 
 https://stackoverflow.com/
+
+https://git-scm.com/
 
