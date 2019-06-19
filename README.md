@@ -121,7 +121,9 @@ Estando en develop
 Las ramas molan pero no seas Diógenes.
 Mantener la higiene de ramas es algo importante. Si no vas a desarrollar una segunda release, o incluso un proyecto paralelo... cuando acabes con el trabajo de una rama... ¡¡¡MÁTALA!!! muaaahahahahahha.
 
-`git branch -D <nombre-rama>`
+`git branch` para ver la lista de las ramas que has creado en local.
+
+`git branch -D <nombre-rama>` utilizamos el '-D' para eliminar la rama.
 
 ## Cuando tienes un repo en remoto
 
