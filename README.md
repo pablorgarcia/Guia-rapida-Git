@@ -85,6 +85,9 @@ Pero si no es así toma la decisión de que es lo válido y "pa-lante". Intenta 
 * Subirlos.
 * Comprueba que todo está ok y que en tu rama están los cambios finales.
 
+¿Tu repositorio local no está apuntando al repositorio remoto?
+`git remote add origin https://github.com/usuario/nombre_del_repositorio.git`
+
 #### Nombres de ramas famosos
 
 * develop ó dev
