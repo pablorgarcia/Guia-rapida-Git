@@ -141,6 +141,8 @@ Cuanto más acutalizada tengas la rama donde estás y tu repo, menos conflictos 
 `git remote add <nombre_para_remoto> <url>`
 Ejemplo: `git remote add origin https://github.com/usuario/nombre_del_repositorio.git`
 
+`git push -u origin master`
+
 Cuando hagas push, recuerda hacerlo a ambos (o tendrás un bonito caos...)
 
 ## Configurar Git
