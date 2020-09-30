@@ -43,6 +43,13 @@ Nos lleva al estado del repositorio en ese momento.
 
 Para volver a donde estábamos tienes que coger el código SHA en el que te encontrabas.
 
+### Volver al commit anterior desaciendo los cambios
+
+`git reset --hard`
+No te han gustado los cambios y quieres volver al estado del último commit, eliminando de manera permanente todos los cambios a todos los archivos realizados.
+La opción "--hard" provoca que si hubiera archivos que no se han agregado al repositorio permanecerán.
+
+
 
 ## Las ramas
 Toma el estado en el que se encuentra el archivo y hace una derivación a otro espacio, de forma que se puede trabajar en él sin afectar al archivo inicial.
@@ -136,6 +143,8 @@ Si hay conflicto resuelve y comitea.
 En resumen:
 Cuanto más acutalizada tengas la rama donde estás y tu repo, menos conflictos tendrás. ANTES DE HACER PUSH HAZ PULL.
 
+`git fetch` Descarga el historial del repo remoto.
+
 ### ¿Tu repositorio local no está apuntando al repositorio remoto?
 
 `git remote add <nombre_para_remoto> <url>`
@@ -198,6 +207,12 @@ Muchas veces, cuando has estado trabajando una parte del código, los archivos s
 `git stash`
 
 `git stash list` si quieres ver una lista con los archivos que tienes 'staseados'
+
+`git stash pop`
+Los cambios guardados en stash vuelven.
+
+`git status --show-stash`
+Ver el status con los archivos en stash.
 
 ### ¿Cómo descartar los cambios 'unstaged'?
 
