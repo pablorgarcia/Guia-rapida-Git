@@ -1,4 +1,4 @@
-# Comandos-utiles-para-git
+# Guía rápida para Git
 
 Comandos de Git usados en el día a día. Versión: Explicado rapidillo pa' ti y pa' mi...
 
