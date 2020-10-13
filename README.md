@@ -15,10 +15,18 @@ Git status nos dice el estado en el que se encuentran nuestros archivos. Si est�
 ### Meter en Stagin Area
 
 `git add <archivo>`
-Git add añade el archivo que le pasemos a stagin area, y que luego estará en el commit. 
+Git add añade el archivo que le pasemos a stagin area, y que luego estará en el commit.
+
+`git add <archivo1> <archivo2>`
+Añade varios archivos a stagin.
  
 `git add .`
 El "." agrega todo a stagin.
+
+### Remover de Stagin Area
+
+`git rm <archivo>`
+Elimina un archivo de stagin.
 
 ### Hacer un commit
 
@@ -26,6 +34,12 @@ El "." agrega todo a stagin.
 Con este comando hacemos un commit de los archivos que estén en stagin area.
 
 Se hace una instantanea de los archivos en ese momento y se agrega a la cabecera (HEAD) quedando registrado y guardado como un punto en el tiempo.
+
+`git commit -m "Mensaje descriptivo del cambio" <archivo>`
+Hacemos un commit de solo un archivo de stagin.
+
+`git commit --amend -m "Mensaje descriptivo del cambio"`
+Modificamos el último commit.
 
 ### Listar los commits
 
