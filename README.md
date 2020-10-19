@@ -6,6 +6,8 @@ Comandos de Git usados en el día a día. Versión: Explicado rapidillo pa' ti y
 1. **Working area**: Pues como bien dice, el momento en el que estás trabajado. Escribiendo tus cosas, borrando...
 2. **Stagin Area** o **Index**: Oye esto ya me mola, creo que lo debería guardar...
 3. **Commited** o **HEAD**: ¡ Ala guardao !
+![Flujo de trabajo](https://github.com/pablorgarcia/Guia-rapida-para-Git/blob/master/images/workflow.png "Flujo de trabajo")
+
 
 ### Meter en Stagin Area
 
