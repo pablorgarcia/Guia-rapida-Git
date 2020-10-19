@@ -6,6 +6,7 @@ Comandos de Git usados en el día a día. Versión: Explicado rapidillo pa' ti y
 1. **Working area**: Pues como bien dice, el momento en el que estás trabajado. Escribiendo tus cosas, borrando...
 2. **Stagin Area** o **Index**: Oye esto ya me mola, creo que lo debería guardar...
 3. **Commited** o **HEAD**: ¡ Ala guardao !
+
 ![Flujo de trabajo](https://github.com/pablorgarcia/Guia-rapida-para-Git/blob/master/images/workflow.png "Flujo de trabajo")
 
 
@@ -35,13 +36,17 @@ Elimina un archivo de stagin.
 `git commit -m "Mensaje descriptivo del cambio"`
 Con este comando hacemos un commit de los archivos que estén en stagin area.
 
-Se hace una instantanea de los archivos en ese momento y se agrega a la cabecera (HEAD) quedando registrado y guardado como un punto en el tiempo.
+Se hace una instantanea de los archivos en ese momento y se agrega a la cabecera (HEAD) quedando registrado y guardado como un punto en el tiempo. Pero aún no en tu repositorio remoto.
 
 `git commit -m "Mensaje descriptivo del cambio" <archivo>`
 Hacemos un commit de solo un archivo de stagin.
 
 `git commit --amend -m "Mensaje descriptivo del cambio"`
 Modificamos el último commit.
+
+### Hacer un push
+Tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios a tu repositorio remoto ejecuta.
+`git push origin master`
 
 ### Listar los commits
 
@@ -233,7 +238,7 @@ Ver el status con los archivos en stash.
 ### ¿Cómo descartar los cambios 'unstaged'?
 
 `git checkout -- .`
-Para todos los archivos 'unstaged'.
+Para todos los archivos 'unstaged'. Esto reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio.
 
 `git checkout -- path/to/file/to/revert`
 Para un archivo en un path especifico.
@@ -245,6 +250,8 @@ Para un archivo en un path especifico.
 https://slides.com/elenam-lopez/no-liarla-parda-con-git-x-2#/
 
 https://github.com/ElenaMLopez/taller_git
+
+https://rogerdudler.github.io/git-guide/index.es.html
 
 https://stackoverflow.com/
 
