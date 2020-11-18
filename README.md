@@ -64,13 +64,14 @@ Nos lleva al estado del repositorio en ese momento.
 
 Para volver a donde estábamos tienes que coger el código SHA en el que te encontrabas.
 
-### Volver al commit anterior desaciendo los cambios
+### Desacer el commit volviendo al anterior, desaciendo los cambios
 
 `git reset --hard`
 No te han gustado los cambios y quieres volver al estado del último commit, eliminando de manera permanente todos los cambios a todos los archivos realizados.
 La opción "--hard" provoca que si hubiera archivos que no se han agregado al repositorio permanecerán.
 
-
+`git reset --soft`
+Iguala tu 'staging area' con el 'repositorio', no afectará tu 'working directory' y hace un `add` a los archivos. No borra el código.
 
 ## Las ramas
 Toma el estado en el que se encuentra el archivo y hace una derivación a otro espacio, de forma que se puede trabajar en él sin afectar al archivo inicial.
