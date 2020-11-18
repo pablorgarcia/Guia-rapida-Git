@@ -176,6 +176,28 @@ Ejemplo: `git remote add origin https://github.com/usuario/nombre_del_repositori
 
 Cuando hagas push, recuerda hacerlo a ambos (o tendrás un bonito caos...)
 
+### Guardar rápido tus cambios, sin llegar a hacer un 'add'
+
+Muchas veces, cuando has estado trabajando una parte del código, los archivos se pueden desordenar y al querer cambiar de rama  un momento para hacer otra cosa hay un conflicto. Si no quieres hacer un commit de un trabajo porque va por la mitad y quieres volver a ese punto más tarde puedes hacer un:
+
+`git stash`
+
+`git stash list` si quieres ver una lista con los archivos que tienes 'staseados'
+
+`git stash pop`
+Los cambios guardados en stash vuelven.
+
+`git status --show-stash`
+Ver el status con los archivos en stash.
+
+### ¿Cómo descartar los cambios 'unstaged'?
+
+`git checkout -- .`
+Para todos los archivos 'unstaged'. Esto reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio.
+
+`git checkout -- path/to/file/to/revert`
+Para un archivo en un path especifico.
+
 ## Configurar Git
 
 `git config --global user.name "nombre"`
@@ -221,29 +243,6 @@ No tiene solución en git:
 `git checkout`
 
 No se puede deshacer, porque se pierde la referencia totalmente, si haces eso sin haber guardado un commit, perderás todos los cambios que hayas hecho.
-
-### Guardar rápido tus cambios, sin llegar a hacer un 'add'
-
-Muchas veces, cuando has estado trabajando una parte del código, los archivos se pueden desordenar y al querer cambiar de rama  un momento para hacer otra cosa hay un conflicto. Si no quieres hacer un commit de un trabajo porque va por la mitad y quieres volver a ese punto más tarde puedes hacer un:
-
-`git stash`
-
-`git stash list` si quieres ver una lista con los archivos que tienes 'staseados'
-
-`git stash pop`
-Los cambios guardados en stash vuelven.
-
-`git status --show-stash`
-Ver el status con los archivos en stash.
-
-### ¿Cómo descartar los cambios 'unstaged'?
-
-`git checkout -- .`
-Para todos los archivos 'unstaged'. Esto reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio.
-
-`git checkout -- path/to/file/to/revert`
-Para un archivo en un path especifico.
-
 
 
 **Fuentes**:
