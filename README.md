@@ -48,6 +48,28 @@ Modificamos el último commit.
 Tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios a tu repositorio remoto ejecuta.
 `git push origin master`
 
+### Guardar rápido tus cambios, sin llegar a hacer un 'add'
+
+Muchas veces, cuando has estado trabajando una parte del código, los archivos se pueden desordenar y al querer cambiar de rama  un momento para hacer otra cosa hay un conflicto. Si no quieres hacer un commit de un trabajo porque va por la mitad y quieres volver a ese punto más tarde puedes hacer un:
+
+`git stash`
+
+`git stash list` si quieres ver una lista con los archivos que tienes 'staseados'
+
+`git stash pop`
+Los cambios guardados en stash vuelven.
+
+`git status --show-stash`
+Ver el status con los archivos en stash.
+
+### ¿Cómo descartar los cambios 'unstaged'?
+
+`git checkout -- .`
+Para todos los archivos 'unstaged'. Esto reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio.
+
+`git checkout -- path/to/file/to/revert`
+Para un archivo en un path especifico.
+
 ### Listar los commits
 
 `git log`
@@ -136,8 +158,6 @@ Para que el commit que vas a hacer cierre un Issue en concreto:
 `git push origin <nombre-rama>`
 A la rama donde estás... ¿vale?
 
-
-
 Una vez tienes ya todo guardado y subido, mergea tu rama a donde corresponda, por ejemplo develop:
 
 1. Hazte pull de la rama donde vas a meter tu rama. 
@@ -153,28 +173,6 @@ Mantener la higiene de ramas es algo importante. Si no vas a desarrollar una seg
 `git branch` para ver la lista de las ramas que has creado en local.
 
 `git branch -D <nombre-rama>` utilizamos el '-D' para eliminar la rama.
-
-### Guardar rápido tus cambios, sin llegar a hacer un 'add'
-
-Muchas veces, cuando has estado trabajando una parte del código, los archivos se pueden desordenar y al querer cambiar de rama  un momento para hacer otra cosa hay un conflicto. Si no quieres hacer un commit de un trabajo porque va por la mitad y quieres volver a ese punto más tarde puedes hacer un:
-
-`git stash`
-
-`git stash list` si quieres ver una lista con los archivos que tienes 'staseados'
-
-`git stash pop`
-Los cambios guardados en stash vuelven.
-
-`git status --show-stash`
-Ver el status con los archivos en stash.
-
-### ¿Cómo descartar los cambios 'unstaged'?
-
-`git checkout -- .`
-Para todos los archivos 'unstaged'. Esto reemplaza los cambios en tu directorio de trabajo con el último contenido de HEAD. Los cambios que ya han sido agregados al Index, así como también los nuevos archivos, se mantendrán sin cambio.
-
-`git checkout -- path/to/file/to/revert`
-Para un archivo en un path especifico.
 
 
 ## Cuando tienes un repo en remoto
