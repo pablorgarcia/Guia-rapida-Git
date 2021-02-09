@@ -10,15 +10,15 @@ Comandos de Git usados en el día a día. Versión: Explicado rapidillo pa' ti y
 ![Flujo de trabajo](https://github.com/pablorgarcia/Guia-rapida-para-Git/blob/master/images/workflow.png "Flujo de trabajo")
 
 
-### Meter en Stagin Area
+### Mirar el estado de nuestros archivos 
 
 `git status`
-Git status nos dice el estado en el que se encuentran nuestros archivos. Si están sin seguimiento, si tienen seguimiento pero se han cambiado o si están en Stagin ya.
+Nos dice el estado en el que se encuentran nuestros archivos. Si están sin seguimiento, si tienen seguimiento pero se han cambiado o si están en Stagin ya.
 
 ### Meter en Stagin Area
 
 `git add <archivo>`
-Git add añade el archivo que le pasemos a stagin area, y que luego estará en el commit.
+Añade el archivo que le pasemos a stagin area, y que luego estará en el commit.
 
 `git add <archivo1> <archivo2>`
 Añade varios archivos a stagin.
