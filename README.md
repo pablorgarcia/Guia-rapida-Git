@@ -50,7 +50,7 @@ Tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios
 
 ### Guardar rápido tus cambios, sin llegar a hacer un 'add'
 
-Muchas veces, cuando has estado trabajando una parte del código, los archivos se pueden desordenar y al querer cambiar de rama  un momento para hacer otra cosa hay un conflicto. Si no quieres hacer un commit de un trabajo porque va por la mitad y quieres volver a ese punto más tarde puedes hacer un:
+Muchas veces, cuando has estado trabajando una parte del código, los archivos se pueden desordenar y al querer cambiar de rama un momento para hacer otra cosa hay un conflicto. Si no quieres hacer un commit de un trabajo porque va por la mitad y quieres volver a ese punto más tarde puedes hacer un:
 
 `git stash`
 
