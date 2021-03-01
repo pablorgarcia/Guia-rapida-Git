@@ -219,6 +219,13 @@ Crear un repositorio en local dentro de la carpeta que queremos, pero trayéndol
 
 La url la cogemos de la ventana que sale al pulsar el botón de 'Clone or download'.
 
+## Elimina Git del proyecto para empezar de nuevo
+`rm -rf .git`
+
+En la carpeta raiz del proyecto. Después:
+
+`git init`
+
 ## Gestión de conflictos
 
 Lo ideal es que no se den... pero se van a dar.
