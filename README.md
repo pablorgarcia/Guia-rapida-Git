@@ -221,6 +221,10 @@ Crear un repositorio en local dentro de la carpeta que queremos, pero trayéndol
 
 La url la cogemos de la ventana que sale al pulsar el botón de 'Clone or download'.
 
+Hay una opción para mejorar la velocidad y el espacio en disco al clonar un repositorio
+`git clone <url del proyecto> --depth 1` con el valor a 1
+No te descargará todo el historial del repositorio, a veces, ni siquiera lo necesitas. Especialmente interesante para procesos en CI.
+
 ## Elimina Git del proyecto para empezar de nuevo
 `rm -rf .git`
 
