@@ -190,6 +190,15 @@ Cuanto más acutalizada tengas la rama donde estás y tu repo, menos conflictos 
 
 `git fetch` Descarga el historial del repo remoto.
 
+
+### Creando un projecto desde cero
+git init
+git add README.md
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/userName/repoName.git
+git push --force origin master
+
 ### ¿Tu repositorio local no está apuntando al repositorio remoto?
 
 `git remote add <nombre_para_remoto> <url>`
