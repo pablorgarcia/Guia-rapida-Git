@@ -196,7 +196,7 @@ git init
 git add README.md
 git add .
 git commit -m "first commit"
-git remote add origin https://github.com/userName/repoName.git
+git remote add origin https:// github.com / <userName> / <repoName>.git
 git push --force origin master
 
 ### ¿Tu repositorio local no está apuntando al repositorio remoto?
