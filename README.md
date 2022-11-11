@@ -208,6 +208,11 @@ Ejemplo: `git remote add origin https://github.com/usuario/nombre_del_repositori
 
 Cuando hagas push, recuerda hacerlo a ambos (o tendrás un bonito caos...)
 
+### Quieres apuntar a un nuevo proyecto en Github?
+
+`git remote set-url <remote_name> <remote_url>` 
+
+`git remote set-url origin nombre-app`
 
 ## Configurar Git
 
