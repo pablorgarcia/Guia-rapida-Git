@@ -2,7 +2,7 @@
 
 Comandos de Git usados en el día a día. Versión: Explicado rapidillo pa' ti y pa' mi...
 
-[pablogarcia.dev/notes/git](https://pablogarcia.dev/notes/git)
+[pablorgarcia.github.io/notes/git](https://pablorgarcia.github.io/notes/git)
 
 ## Diferentes estados de tu archivo
 1. **Working area**: Pues como bien dice, el momento en el que estás trabajado. Escribiendo tus cosas, borrando...
