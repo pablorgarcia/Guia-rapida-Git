@@ -285,7 +285,9 @@ Fíjate cómo los añade Git (al hacer merge de una rama usa "Merge branch").
 El primer mensaje del commit es el título y no se puntúan.
 
 `git commit -m "Add new search feature."` ❌
+
 `git commit -m "Fix a problem with the topbar..."` ❌
+
 `git commit -m "Change the default system color"` ✅
 
 ### 3. Usa como máximo 50 carácteres para tu mensaje de commit
@@ -311,12 +313,15 @@ Cuando un proyecto crece, es necesario que existan ciertas reglas para que el hi
 ### 6. Aprovecha los mensajes
 
 ❌ `"Remove CSS unused"`
+
 ✅ `"Remove unused button styles from landing page /cities"`
 
 ❌ `"Add new feature"`
+
 ✅ `"Add search functionality by city for registered users"`
 
 ❌ `"Fix bug"`
+
 ✅ `"Fix auth flow adding a redirection to home page"`
 
 ### 7. Considera usar utilidades para hacer commit
